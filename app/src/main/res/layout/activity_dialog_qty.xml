@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/tv_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="CAH1C13002A1-0"
+        android:layout_marginTop="8dp"
+        android:textSize="16dp" />
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:id="@+id/tv_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SHACKLE RR SPRING (BLANK CAST)"
+         android:textStyle="bold"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="16dp"/>
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:id="@+id/ll_qty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/Qty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:text="Quantity : "
+                android:textAppearance="?android:textAppearanceMedium"
+                />
+            <EditText
+                android:gravity="center"
+                android:id="@+id/et_qtycolly"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:hint=" qty "
+                />
+            <!--<com.google.android.material.textfield.TextInputLayout-->
+                <!--android:id="@+id/til_qty"-->
+                <!--android:layout_width="100dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:hint="qty packing">-->
+
+                <!--<com.google.android.material.textfield.TextInputEditText-->
+                    <!--android:gravity="center"-->
+                    <!--android:inputType="number"-->
+                    <!--android:id="@+id/et_qtycolly"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--/>-->
+
+            <!--</com.google.android.material.textfield.TextInputLayout>-->
+        </LinearLayout>
+    </LinearLayout>

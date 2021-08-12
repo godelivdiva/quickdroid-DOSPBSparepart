@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_Item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="CAH1C13002A1-0"
+            android:layout_marginTop="8dp"
+            android:textAppearance="?android:textAppearanceMedium"
+            />
+
+        <TextView
+            android:id="@+id/tv_Desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SHACKLE RR SPRING (BLANK CAST)"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_request" />
+
+                <TextView
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:text="Request   : "/>
+
+                <TextView
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center"
+                    android:id="@+id/tv_Request"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:text="14"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_allocated" />
+
+                <TextView
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:text="Allocate   : "/>
+
+                <TextView
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center"
+                    android:id="@+id/tv_Allocate"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:text="10"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_qty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_input" />
+            <TextView
+                android:id="@+id/Verifikasi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:textStyle="bold"
+                android:text="Verifikasi : "
+                android:textAppearance="?android:textAppearanceMedium" />
+            <ImageButton
+                android:layout_marginLeft="8dp"
+                android:background="@color/transparent"
+                android:id="@+id/btn_minus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_minus"/>
+
+            <!--<TextView-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:id="@+id/tv_Verifikasi"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textAppearance="@style/TextAppearance.AppCompat.Medium"-->
+                <!--android:textSize="28dp"-->
+                <!--android:textStyle="bold"-->
+                <!--android:text="0"/>-->
+            <!---->
+            <EditText
+                android:layout_marginLeft="10dp"
+                android:id="@+id/et_Verifikasi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:inputType="number"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textSize="24dp"
+                />
+
+            <ImageButton
+                android:layout_marginLeft="10dp"
+                android:background="@color/transparent"
+                android:id="@+id/btn_plus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_plus"/>
+        </LinearLayout>
+        <!--<LinearLayout-->
+            <!--android:id="@+id/ll_qtyinput"-->
+            <!--android:layout_marginTop="5dp"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:gravity="center">-->
+            <!--<TextView-->
+                <!--android:id="@+id/Verifikasi2"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="5dp"-->
+                <!--android:textStyle="bold"-->
+                <!--android:text="Verifikasi : "-->
+                <!--android:textAppearance="?android:textAppearanceMedium"-->
+                <!--/>-->
+            <!--<com.google.android.material.textfield.TextInputLayout-->
+                <!--android:id="@+id/textField"-->
+                <!--android:layout_width="150dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:hint="quantity">-->
+
+                <!--<com.google.android.material.textfield.TextInputEditText-->
+                    <!--android:gravity="center"-->
+                    <!--android:id="@+id/et_verifikasi"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--/>-->
+
+            <!--</com.google.android.material.textfield.TextInputLayout>-->
+        <!--</LinearLayout>-->
+        <!--<LinearLayout-->
+            <!--android:id="@+id/ll_alasan"-->
+            <!--android:layout_marginTop="5dp"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:gravity="center">-->
+            <!--<TextView-->
+                <!--android:id="@+id/Alasan"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="5dp"-->
+                <!--android:textStyle="bold"-->
+                <!--android:text="Alasan      : "-->
+                <!--android:textAppearance="?android:textAppearanceMedium"-->
+                <!--/>-->
+            <!--<com.google.android.material.textfield.TextInputLayout-->
+                <!--android:id="@+id/textField2"-->
+                <!--android:layout_width="150dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:hint="alasan">-->
+
+                <!--<com.google.android.material.textfield.TextInputEditText-->
+                    <!--android:gravity="center"-->
+                    <!--android:id="@+id/et_alasan"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--/>-->
+
+            <!--</com.google.android.material.textfield.TextInputLayout>-->
+        <!--</LinearLayout>-->
+
+    </LinearLayout>
+
+</LinearLayout>

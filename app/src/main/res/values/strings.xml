@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">DO SPB SPAREPART</string>
+    <string name="header" translatable="false">Quickdroid</string>
+    <string name="username" translatable="false">Username</string>
+    <string name="password" translatable="false">Password</string>
+    <string name="verifikasi" translatable="false">Sudah Verifikasi</string>
+</resources>
